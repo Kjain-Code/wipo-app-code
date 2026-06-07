@@ -176,7 +176,7 @@ export function HeroSection() {
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
           <motion.a
-            href="https://https://github.com/Kjain-Code/wipo-code/releases/download/v1.0.0/app-release.apk"
+            href="https://github.com/Kjain-Code/wipo-code/releases/download/v1.0.0/app-release.apk"
             download
             className="glow-button px-8 py-4 rounded-xl font-bold text-lg text-white flex items-center gap-3 shadow-lg transition-all duration-300 group relative overflow-hidden"
             whileHover={{ scale: 1.05 }}
