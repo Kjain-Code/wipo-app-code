@@ -102,7 +102,7 @@ export function FinalCTA() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <motion.a
-                href="https://github.com/Kjain-Code/wipo-code/releases/download/v1.0.0/app-release.apk"
+                href="https://github.com/Kjain-Code/wipo-app-code/releases/download/v1.0.0/app-release.7.apk"
                 download
                 className="glow-button px-10 py-4 rounded-xl font-bold text-lg text-white flex items-center gap-3 shadow-lg group relative overflow-hidden"
                 whileHover={{ scale: 1.05 }}
