@@ -38,6 +38,7 @@ function StatCard({ icon: Icon, value, suffix, label }: { icon: any, value: numb
   );
 }
 
+
 export function HeroSection() {
   const sectionRef = useRef(null);
   const { scrollYProgress } = useScroll({ target: sectionRef });
