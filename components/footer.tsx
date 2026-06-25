@@ -91,7 +91,7 @@ export function Footer() {
                 whileHover={{ x: 5 }}
               >
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                <span>support@wipogroup.com</span>
+                <span>wipogroup@gmail.com</span>
               </motion.a>
               <motion.a
                 href="tel:+1234567890"
@@ -99,14 +99,14 @@ export function Footer() {
                 whileHover={{ x: 5 }}
               >
                 <Phone className="w-4 h-4 flex-shrink-0" />
-                <span>+1 (234) 567-890</span>
+                <span>8394878217</span>
               </motion.a>
               <motion.div
                 className="flex items-start gap-2 text-foreground/70 text-sm font-medium"
                 whileHover={{ x: 5 }}
               >
                 <MapPin className="w-4 h-4 flex-shrink-0 mt-0.5" />
-                <span>123 Investment Ave, Finance City, FC 12345</span>
+                <span>Bareilly, Uttar Pradesh 243202</span>
               </motion.div>
             </div>
           </motion.div>
