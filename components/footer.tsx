@@ -91,7 +91,7 @@ export function Footer() {
                 whileHover={{ x: 5 }}
               >
                 <Mail className="w-4 h-4 flex-shrink-0" />
-                <span>wipogroup@gmail.com</span>
+                <span>wipogroupn@gmail.com</span>
               </motion.a>
               <motion.a
                 href="tel:+1234567890"
