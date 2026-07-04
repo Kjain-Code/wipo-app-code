@@ -6,6 +6,9 @@ import './globals.css'
 const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
+// Payment pending ho to isse true rakhein, payment milte hi false kar dein
+const PAYMENT_PENDING = true;
+
 export const metadata: Metadata = {
   title: 'WIPO Group - Smart Property Investment Platform',
   description: 'Invest smarter with WIPO Group. Access verified property deals, investment committees, and smart growth opportunities.',
@@ -34,6 +37,47 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  if (PAYMENT_PENDING) {
+    return (
+      <html lang="en" className="dark bg-background">
+        <body className="font-sans antialiased bg-background text-foreground">
+          <div style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            background: '#000',
+            color: '#fff',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            textAlign: 'center',
+            fontFamily: 'sans-serif',
+            zIndex: 999999,
+            padding: '20px',
+          }}>
+            <div style={{
+              fontSize: '14px',
+              letterSpacing: '2px',
+              color: '#ff5555',
+              marginBottom: '20px',
+              textTransform: 'uppercase',
+            }}>
+              Service Unavailable
+            </div>
+            <div style={{ fontSize: '22px', maxWidth: '600px', lineHeight: '1.6' }}>
+              This website has been temporarily suspended due to a pending payment issue.
+              <br /><br />
+              The site will be restored as soon as the outstanding payment is cleared.
+            </div>
+          </div>
+        </body>
+      </html>
+    );
+  }
+
   return (
     <html lang="en" className="dark bg-background">
       <body className="font-sans antialiased bg-background text-foreground">
